@@ -5,7 +5,7 @@ const moment = require("moment");
 
 const app = express();
 const port = 8000;
-host = '192.168.43.99';//'192.168.43.99'; 
+host = 'localhost';
 const cors = require("cors");
 app.use(cors());
 const cron = require("node-cron");
@@ -13,7 +13,7 @@ const cron = require("node-cron");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //.connect("mongodb://localhost:27017", { 
-mongoose.connect("mongodb+srv://popebraxton6:popebraxton6@esmsexpo-copy.zh78voe.mongodb.net/", {
+mongoose.connect("mongodb+srv://....mongodb.net/", {
     
     useNewUrlParser: true,
     useUnifiedTopology: true,
