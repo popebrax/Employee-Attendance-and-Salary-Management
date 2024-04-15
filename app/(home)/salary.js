@@ -24,7 +24,7 @@ const SalarySummary = () => {
   const fetchAttendanceReport = async () => {
     try {
       const response = await axios.get(
-        "http://192.168.43.99:8000/attendance-report-all-employees",
+        "http://localhost:8000/attendance-report-all-employees",
         {
           params: {
             month: currentDate.month() + 1,
