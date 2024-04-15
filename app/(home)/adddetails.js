@@ -37,7 +37,7 @@ const adddetails = () => {
     console.log(employeeData);
     //when adding an employee the backend api uses the defined link to add employee to the mongo database then try and catches if an error occurs
     axios
-      .post('http://192.168.43.99:8000/addEmployee', employeeData)
+      .post('http://localhost:8000/addEmployee', employeeData)
       .then((response) => {
         Alert.alert(
           'Registration Successful',
