@@ -20,8 +20,7 @@ export default function Layout() {
       <Stack.Screen name="workflow" />
       <Stack.Screen name="criteria" />
       <Stack.Screen name="salary" />
-      <Stack.Screen name="employeeperformanceline" />
-      <Stack.Screen name="allemployees" />
+     
     
     
       
