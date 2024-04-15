@@ -77,14 +77,14 @@ const useremployee = () => {
       let response;
       if (action === "checkin") {
         response = await axios.post(
-          "http://192.168.43.99:8000/attendance/checkin",
+          "http://localhost:8000/attendance/checkin",
           attendanceData
         );
         setAttendanceStatus("present");
         setAttendanceRecord(response.data);
       } else if (action === "checkout") {
         response = await axios.post(
-          "http://192.168.43.99:8000/attendance/checkout",
+          "http://localhost:8000/attendance/checkout",
           attendanceData
         );
         setAttendanceStatus("absent");
