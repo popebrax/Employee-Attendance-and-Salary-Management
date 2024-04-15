@@ -26,7 +26,7 @@ const User = () => {
   const fetchAttendanceRecord = async () => {
     try {
       const response = await axios.get(
-        `http://192.168.43.99:8000/attendance/${params?.id}?date=${currentDate.format("MMMM D, YYYY")}`
+        `http://localhost:8000/attendance/${params?.id}?date=${currentDate.format("MMMM D, YYYY")}`
       );
       setAttendanceRecord(response.data);
     } catch (error) {
