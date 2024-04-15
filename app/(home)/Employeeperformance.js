@@ -30,7 +30,7 @@ const fetchAttendanceReport = async () => {
     const currentMonth = currentDate.month() + 1; // Month is zero-based, so we add 1
     const currentYear = currentDate.year();
 
-    const response = await axios.get('http://192.168.43.99:8000/attendance-report-all-employees', {
+    const response = await axios.get('http://localhost:8000/attendance-report-all-employees', {
       params: {
         month: currentMonth,
         year: currentYear,
